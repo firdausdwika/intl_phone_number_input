@@ -63,7 +63,7 @@ class _Flag extends StatelessWidget {
         ? Container(
             decoration: BoxDecoration(
                 borderRadius: BorderRadius.circular(100),
-                border: Border.all(width: 1, color: Colors.gray)),
+                border: Border.all(width: 1, color: Colors.grey)),
             child: useEmoji!
                 ? Text(
                     Utils.generateFlagEmojiUnicode(country?.alpha2Code ?? ''),
