@@ -36,7 +36,6 @@ class Item extends StatelessWidget {
         children: <Widget>[
           SizedBox(width: leadingPadding),
           Container(
-            margin: EdgeInsets.all(100.0),
             decoration: BoxDecoration(shape: BoxShape.circle),
             child: _Flag(
               country: country,
