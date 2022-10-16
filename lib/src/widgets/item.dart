@@ -35,11 +35,15 @@ class Item extends StatelessWidget {
         mainAxisSize: MainAxisSize.min,
         children: <Widget>[
           SizedBox(width: leadingPadding),
-          _Flag(
-            country: country,
-            showFlag: showFlag,
-            useEmoji: useEmoji,
-          ),
+          Container(
+            margin: EdgeInsets.all(100.0),
+            decoration: BoxDecoration(shape: BoxShape.circle),
+            child: _Flag(
+              country: country,
+              showFlag: showFlag,
+              useEmoji: useEmoji,
+            ),
+          )
         ],
       ),
     );
