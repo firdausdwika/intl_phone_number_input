@@ -61,9 +61,6 @@ class _Flag extends StatelessWidget {
   Widget build(BuildContext context) {
     return country != null && showFlag!
         ? Container(
-            decoration: BoxDecoration(
-                borderRadius: BorderRadius.circular(100),
-                border: Border.all(width: 1, color: Colors.grey)),
             child: useEmoji!
                 ? Text(
                     Utils.generateFlagEmojiUnicode(country?.alpha2Code ?? ''),
